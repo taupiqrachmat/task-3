@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img class="navbar-logo" src="logo.PNG" alt="Logo">
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link" href="#">My Projects</a>
+        </div>
+        <div class="navbar-right">
+            <a class="navbar-link" href="">Contact Me</a>
+        </div>
+    </div>
+
+    <form>
+        <div>
+            <label for="input-name">Name</label>
+            <input id="input-name" type="text" required>
+        </div>
+        <div>
+            <label for="input-email">Email</label>
+            <input id="input-email" type="email" required>
+        </div>
+        <div>
+            <label for="input-phone">Phone Number</label>
+            <input id="input-phone" type="number">
+        </div>
+        <div>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject" required>
+                <option value="" hidden>Select</option>
+                <option value="Option 1">Frontend</option>
+                <option value="Option 2">Backend</option>
+                <option value="Option 3">Fullstack</option>
+            </select>
+        </div>
+        <div>
+            <label for="input-message">Your Message</label>
+            <textarea id="input-message" cols="10" rows="5"></textarea>
+        </div>
+        <button type="button" onclick="submitData()">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
